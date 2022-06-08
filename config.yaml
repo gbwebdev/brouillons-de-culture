@@ -1,0 +1,50 @@
+baseURL: 'http://culture.gbweb.fr/'
+defaultContentLanguage: fr
+languageCode: fr
+title: Brouillons de Culture
+theme: FeelIt
+params:
+  version: 1.0.X
+  description: "Notes de lecture, de visionnage... Plus pour me souvenir de ce que j'ai lu/vu que pour la probabilité que cela puisse intéresser quelqu'un, et définitivement plus \"café du commerce\" que \"cahiers du cinéma\"."
+  home:
+    profile:
+      title: "Brouillons de Culture"
+      subtitle: |
+        Notes de lecture, de visionnage... et de culture en général (avec un petit "c" le plus souvent).<br/>
+        Plus pour me souvenir de ce que j'ai lu/vu que pour la probabilité que cela puisse intéresser quelqu'un.<br/>
+        ...et définitivement plus "café du commerce" que "cahiers du cinéma".
+    posts:
+      imagePreview: true
+      displayAuthor: false
+  page:
+    toc: false
+  sections:
+    displayAs: cards
+  taxonomies:
+    groupTagsBySections: true
+    groupCategoriesBySections: true
+taxonomies:
+  category: categories
+  tag: tags
+  tag_visionnages: tags_visionnages
+  tag_lectures: tags_lectures 
+menu:
+  main:
+    - identifier: categories
+      pre: '' 
+      post: '' 
+      name: Catégories
+      url: /categories/
+      title: ''
+      weight: 1
+    - identifier: tags
+      pre: '' 
+      post: '' 
+      name: Tags
+      url: /tags/
+      title: ''
+      weight: 2
+markup:
+  highlight:
+    noClasses: false
+ 
